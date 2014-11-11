@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+	<script src="http://vk.com/js/api/openapi.js" type="text/javascript"></script>
+    <script src="/audiojs/audio.min.js"></script>
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  <body>
+<div id="option" class="options">
+    <div id="hp">Здоровье <span id="st_hp"></span></div>
+    <div id="money">Деньги <span id="st_money"></span></div>
+    <div id="status_time">Время <span id="st_status_time"></span></div>
+    <div id="time_sushi">Вpемя до суши <span id="st_time_sushi"></span></div>
+    <div id="time_taxi">Вpемя до такси <span id="st_time_taxi"></span></div>
+    <div id="time">Общее время <span id="st_time"></span></div>
+</div>
+<div id="gop-container"></div>
+<div class="city" id="home"><img src="home.png" height="200" width="200"/></div>
+<div class="city" id="shop"><img src="shop.png" height="200" width="200"/></div>
+<div class="city" id="hospital"><img src="hospital.png" height="200" width="200"/></div>
+<div id="person"></div>
+
+<div id="car"><img src="taxi.gif" height="140" width="140"/></div>
+
+<div id="actions" class="options"></div>
+<!--Для шаблона-->
+<div id="menu"></div>
+
+    <script type="text/html" id="arrLi">
+        <div class="dropdown-element">
+            <div class="dropdown-title" onclick="<%= cli%>"><%= arrLi%></div>
+            <div class="dropdown-cost"><%= cost%></div>
+        </div>
+    </script>
+    <script src="js.js"></script>
+  </body>
+</html>
