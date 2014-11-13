@@ -1,0 +1,110 @@
+body{
+	background: url(bg.png);
+	background-size: 50%;
+}
+#actions{
+    margin-bottom: 10px;
+    width: 80%;
+    position: absolute;
+    bottom: 0px;
+    -webkit-transition: bottom 2s;
+    -ms-transition: bottom 2s;
+    -o-transition: bottom 2s;
+    -moz-transition: bottom 2s;
+    transition: bottom 2s;
+}
+#actions div{
+    width: auto;
+    padding-right: 5px;
+}
+.city{
+	height: 200px;
+	width: 200px;
+	//border: 1px solid black;
+	position: absolute;
+	margin: 50px 10px 10px 10px;
+	cursor: pointer;
+	text-align: center;
+	//line-height: 150px;
+
+}
+#home{
+	top: 0px;
+	left: 0px;
+}
+#gop-container{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    margin-top: 250px;
+    right: 0px;
+}
+#gop-container img{
+    float: left;
+}
+#shop{
+	top: 0px;
+	right: 0px;
+}
+#hospital{
+	bottom: 140px;
+	margin: 10px 50%;
+	left: -75px;
+}
+.options{
+	height: 40px;
+	position: relative;
+	border-radius: 10px 10px;
+	background: #d7f0a8;
+	color: #7f8673;
+	font-family: Gill Sans;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+.options > div{
+	line-height: 40px;
+	height: 40px;
+	display: inline-block;
+	position: relative;
+	float: left;
+	padding: 0 20px;
+	border-right:  1px solid #7f8673;
+}
+#car{
+	margin-left: 100px;
+	margin-top: 100px;
+	position: relative;
+	top:0px;
+	left:0px;
+    width: 100px;
+    -webkit-transition: left 5s,top 5s;
+    -ms-transition: left 5s,top 5s;
+    -o-transition: left 5s,top 5s;
+    -moz-transition: left 5s,top 5s;
+    transition: left 5s,top 5s;
+}
+.city div{
+    display: none;
+    z-index: 10;
+}
+.city:hover div{
+    display: block;
+    height: 40px;
+    border-bottom: 1px solid #7f8673;
+    background: #d7f0a8;
+    color: #7f8673;
+    font-family: Gill Sans;
+    z-index: 10;
+}
+.dropdown-element{
+
+}
+.dropdown-title{
+    float:left;
+    width:150px;
+}
+.dropdown-element > .dropdown-cost{
+    float:left;
+    width:50px;
+    font-size: 17px;
+}
