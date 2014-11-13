@@ -21,9 +21,9 @@ function tmpl(str){
     return fn
 }
 
-audiojs.events.ready(function() {
-    var as = audiojs.createAll();
-});
+//audiojs.events.ready(function() {
+//    var as = audiojs.createAll();
+//});
 
 
 function teleport(elem){
